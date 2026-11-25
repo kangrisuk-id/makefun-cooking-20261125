@@ -1,0 +1,39 @@
+/* Sizzle & Serve page chrome: the game itself is drawn on the canvas. */
+:root {
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #17100b;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+#stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  background: radial-gradient(1200px 700px at 50% 30%, #2b1c10 0%, #17100b 70%);
+}
+#game {
+  width: min(1280px, 96vw);
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), 0 0 0 4px #3a2415;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+#hint {
+  margin: 0;
+  color: #c9a877;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
